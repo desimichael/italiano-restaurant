@@ -3,15 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com"
+				crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;500;700;900&display=swap"
+				rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 		<title>Italianopari</title>
 	</head>
 	<body>
-		<header>
-      <a href="#" class="logo">Italionopari</a>
+		<header class="header">
+      <a href="#" class="header__logo">Italionopari</a>
       <div class="menuToggle" onclick="toggleMenu();"></div>
-			<ul class="nav">
+			<ul class="header__nav">
 				<li><a href="#banner" onclick="toggleMenu();">Home</a></li>
 				<li><a href="#about" onclick="toggleMenu();">About</a></li>
 				<li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
@@ -20,10 +25,10 @@
 				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 			</ul>
 		</header>
-		<section class="banner transparent-color" id="banner">
-			<div class="content">
-				<h2>Good Food Lies Ahead</h2>
-				<p>
+		<section class="banner">
+			<div class="banner__content">
+				<h2 class="banner__title">Good Food Lies Ahead</h2>
+				<p class="paragraph">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 					Culpa officia ea itaque sunt laudantium quidem sapiente
 					quod, iusto incidunt a dolor sint deserunt magni minima
@@ -33,11 +38,11 @@
 				<a class="btn" href="#">View Menu</a>
 			</div>
 		</section>
-		<section class="about" id="about">
-			<div class="grid-container ">
+		<section class="about">
+			<div class="about__grid-container">
 				<div class="col-left">
-					<h2 class="titleText">About Us</h2>
-					<p>
+					<h2 class="about__title">About Us</h2>
+					<p class="paragraph">
 						Lorem ipsum, dolor sit amet consectetur adipisicing
 						elit. Blanditiis, magni incidunt quo architecto, quis
 						officia quod tenetur rerum, atque nisi vitae iure
@@ -69,80 +74,76 @@
           </div>
 				</div>
 				<div class="col-right">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/niceplate.jpg" alt="nice plate" />
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="menu" id="menu">
-			<div class="title">
-				<h2 class="titleText">Menu</h2>
+		<section class="menu menu1">
+			<div class="title-heading">
+				<h2 class="title">Menu</h2>
 				<p>Take a look at our specials!</p>
 			</div>
-			<div class="grid-container">
-				<div class="box">
-					<div class="imgBox">
+			<div class="menu1__grid-container">
+				<a href="#" class="box">
+					<div class="image-box">
 						<img src="/images/chixparm.jpg" alt="chix parm" />
 					</div>
 					<div class="text">
 						<h3>Featured Appetizer</h3>
 					</div>
-				</div>
-				<div class="box">
-					<div class="imgBox">
+				</a>
+				<a href="#" class="box">
+					<div class="image-box">
 						<img src="/images/entree-2.jpg" alt="chix parm" />
 					</div>
 					<div class="text">
-						
 						<h3>Featured Entree</h3>
 					</div>
-				</div>
-				<div class="box">
-					<div class="imgBox">
-						<img src="/images/wine-1.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Special Beverage</h3>
-					</div>
-				</div>
-				<div class="box">
-					<div class="imgBox">
-						<img src="/images/entree-3.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Featured Entree</h3>
-					</div>
-				</div>
-				<div class="box">
-					<div class="imgBox">
-						<img src="/images/cheesecake.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Featured Desert</h3>
-					</div>
-				</div>
-				<div class="box">
-					<div class="imgBox">
+				</a>
+				<a href="#" class="box">
+					<div class="image-box">
 						<img src="/images/wine-2.jpg" alt="chix parm" />
 					</div>
 					<div class="text">
 						<h3>Special Beverage</h3>
 					</div>
-				</div>
+				</a>
+				<a href="#" class="box">
+					<div class="image-box">
+						<img src="/images/entree-3.jpg" alt="chix parm" />
+					</div>
+					<div class="text">
+						<h3>Featured Entree</h3>
+					</div>
+				</a>
+				<a href="#" class="box">
+					<div class="image-box">
+						<img src="/images/cheesecake.jpg" alt="chix parm" />
+					</div>
+					<div class="text">
+						<h3>Featured Desert</h3>
+					</div>
+				</a>
+				<a href="#" class="box">
+					<div class="image-box">
+						<img src="/images/wine-1.jpg" alt="chix parm" />
+					</div>
+					<div class="text">
+						<h3>Featured Desert</h3>
+					</div>
+				</a>
 			</div>
-			<div class="title">
-				<a href="#" class="btn">View All</a>
-			</div>
+			<a href="#" class="btn">View All</a>
 		</section>
 		<section class="chefs" id="chefs">
-			<div class="title">
-				<h2 class="titleText">Chefs Kitchen</h2>
-				<p>See who creates our tasty meals</p>
+			<div class="title-heading">
+				<h2 class="titleText">Meet The Team</h2>
 			</div>
 			<div class="content">
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/chef1.jpg" alt="chef" />
 					</div>
 					<div class="text">
@@ -150,7 +151,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/chef2.jpg" alt="chef" />
 					</div>
 					<div class="text">
@@ -158,7 +159,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/chef3.jpg" alt="chef" />
 					</div>
 					<div class="text">
@@ -166,7 +167,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/chef4.jpg" alt="chef" />
 					</div>
 					<div class="text">
@@ -174,7 +175,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/chef5.jpg" alt="chef" />
 					</div>
 					<div class="text">
@@ -184,13 +185,13 @@
 			</div>
 		</section>
 		<section class="testimonials" id="testimonials">
-			<div class="title white">
+			<div class="title-heading white">
 				<h2 class="titleText">What they are saying</h2>
 				<p>See who creates our tasty meals</p>
 			</div>
 			<div class="content">
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/headshot1.jpg" alt="testimonials" />
 					</div>
 					<div class="text">
@@ -205,7 +206,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/headshot2.jpg" alt="testimonials" />
 					</div>
 					<div class="text">
@@ -220,7 +221,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/headshot3.jpg" alt="testimonials" />
 					</div>
 					<div class="text">
@@ -235,7 +236,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="imgBox">
+					<div class="image-box">
 						<img src="/images/headshot4.jpg" alt="testimonials" />
 					</div>
 					<div class="text">
@@ -252,7 +253,7 @@
 			</div>
     </section>
     <section class="contact" id="contact">
-			<div class="title">
+			<div class="title-heading">
 				<h2 class="titleText">Contact Us</h2>
 				<p>Please get in touch with us!</p>
       </div>
@@ -272,8 +273,8 @@
         </div>
       </div>
     </section>
-    <div class="copyrightText">
-      <p>Copyright 2020 Italianopari Restaurant</p>
+    <footer class="footer">
+      <p>Copyright 2022 Italianopari Restaurant</p>
       <div class="social-links">
         <div class="text">
           <h4>Follow Us:</h4>
@@ -288,7 +289,7 @@
 					<i class="fab fa-twitter-square"></i>
 				</a>
       </div>
-    </div>
+    </footer>
 	</body>
 	<script src="/main.js"></script>
 </html>
