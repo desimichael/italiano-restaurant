@@ -2,284 +2,494 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="#">
+		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com"
 				crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;500;700;900&display=swap"
 				rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-		<title>Italianopari</title>
+		<title>Italianopari - Home</title>
 	</head>
 	<body>
 		<header class="header">
       <a href="#" class="header__logo">Italionopari</a>
-      <div class="menuToggle" onclick="toggleMenu();"></div>
 			<ul class="header__nav">
-				<li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-				<li><a href="#about" onclick="toggleMenu();">About</a></li>
-				<li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
-				<li><a href="#chefs" onclick="toggleMenu();">Chefs</a></li>
-				<li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
-				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#menu">Menus</a></li>
+				<li><a href="#chefs">Gift Cards</a></li>
+				<li><a href="#banner">Group Dining</a></li>
+				<li><a href="#banner">Reservations</a></li>
 			</ul>
+			<div class="header__hamburger">
+				<i class="fas fa-bars"></i>				
+			</div>
 		</header>
-		<section class="banner">
-			<div class="banner__content">
-				<h2 class="banner__title">Good Food Lies Ahead</h2>
-				<p class="paragraph">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Culpa officia ea itaque sunt laudantium quidem sapiente
-					quod, iusto incidunt a dolor sint deserunt magni minima
-					dolorem, ipsam harum et quam!
-					what!!
-				</p>
-				<a class="btn" href="#">View Menu</a>
-			</div>
-		</section>
-		<section class="about">
-			<div class="about__grid-container">
-				<div class="col-left">
-					<h2 class="about__title">About Us</h2>
-					<p class="paragraph">
-						Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Blanditiis, magni incidunt quo architecto, quis
-						officia quod tenetur rerum, atque nisi vitae iure
-						laboriosam. Non nostrum tenetur sint cupiditate quam!
-						Culpa nostrum et dolorem ex ipsa, labore reprehenderit?
-						Quaerat ab architecto tempora, repellat perferendis
-						ratione labore sapiente rem sunt fugiat, saepe beatae
-						minima voluptate, consequatur veniam dolorum porro
-						excepturi itaque mollitia ducimus molestiae. Tempore eos
-						perspiciatis natus eum nihil libero accusamus magnam
-						aliquid, iusto quas inventore cumque quisquam itaque
-						possimus impedit sit, sed ex maiores harum placeat
-						molestias exercitationem eligendi quidem! A perspiciatis
-						unde illum non alias deleniti quod enim nobis.
-          </p>
-          <div class="social-links">
-            <div class="text">
-						<h4>Follow Us:</h4>
+		<!-- Mobile Header Start -->
+		<div class="mobile__menu">
+			<div class="mobile__menu-inner">
+				<div class="mobile__menu-top">
+					<div class="mobile__menu-header">
+						<a href="#"
+								class="mobile__menu-logo">Italionopari</a>
+						<div class="mobile__menu-close-btn">
+							<i class="fas fa-times"></i>
+						</div>
 					</div>
-            <a href="#" class="link">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="link">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#" class="link">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          </div>
-				</div>
-				<div class="col-right">
-					<div class="image-box">
-						<img src="/images/niceplate.jpg" alt="nice plate" />
+					<div class="mobile__menu-content">
+						<ul class="mobile-nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#menu">Menus</a></li>
+							<li><a href="#gift">Gift Cards</a></li>
+							<li><a href="#group">Group Dining</a></li>
+							<li><a href="#reservations">Reservations</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="menu menu1">
-			<div class="title-heading">
-				<h2 class="title">Menu</h2>
-				<p>Take a look at our specials!</p>
+		</div>
+		<!-- Mobile Header End -->
+		<section class="email-modal">
+			<div class="email-modal__container">
+			<div class="email-modal__close-btn">
+				<i class="fas fa-times"></i>
 			</div>
-			<div class="menu1__grid-container">
-				<a href="#" class="box">
-					<div class="image-box">
-						<img src="/images/chixparm.jpg" alt="chix parm" />
+				<div class="email-modal__info">
+						<h3 class="email-modal__title">
+							Free Gift Cards!!
+						</h3>
+					<h2>Hey Wait...</h2>
+					<p class="email-modal__message">Don't miss out on a chance to win
+						<span class="email-modal__message--highlight">Free Gift Cards!</span> Join our community of over <span
+									class="email-modal__message--highlight">30,000</span>
+						men, women, and children that love our food. Join
+						our newsletter and receive <span
+									class="email-modal__message--highlight">notifications
+							and discounts.</span>
+					</p>
+					<div class="email-modal__error-message">
+						Sorry, this is not a valid email
 					</div>
-					<div class="text">
-						<h3>Featured Appetizer</h3>
+					<div class="email-modal__form-group">
+						<input type="text" class="email-modal__input"
+									 placeholder="emailaddress@gmail.com">
+						<button class="email-modal__button">Send</button>
 					</div>
-				</a>
-				<a href="#" class="box">
-					<div class="image-box">
-						<img src="/images/entree-2.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Featured Entree</h3>
-					</div>
-				</a>
-				<a href="#" class="box">
-					<div class="image-box">
-						<img src="/images/wine-2.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Special Beverage</h3>
-					</div>
-				</a>
-				<a href="#" class="box">
-					<div class="image-box">
-						<img src="/images/entree-3.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Featured Entree</h3>
-					</div>
-				</a>
-				<a href="#" class="box">
-					<div class="image-box">
-						<img src="/images/cheesecake.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Featured Desert</h3>
-					</div>
-				</a>
-				<a href="#" class="box">
-					<div class="image-box">
-						<img src="/images/wine-1.jpg" alt="chix parm" />
-					</div>
-					<div class="text">
-						<h3>Featured Desert</h3>
-					</div>
-				</a>
-			</div>
-			<a href="#" class="btn">View All</a>
-		</section>
-		<section class="chefs" id="chefs">
-			<div class="title-heading">
-				<h2 class="titleText">Meet The Team</h2>
-			</div>
-			<div class="content">
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/chef1.jpg" alt="chef" />
-					</div>
-					<div class="text">
-						<h3>Chef Roberto</h3>
-					</div>
+					<a href="#"class="email-modal__decline-offer">
+						Sorry, I'm not interested
+					</a>
 				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/chef2.jpg" alt="chef" />
+				<div class="email-modal__thank-you">
+					<div class="thank-you-title">
+						Thank You!
 					</div>
-					<div class="text">
-						<h3>Chef Danny</h3>
-					</div>
-				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/chef3.jpg" alt="chef" />
-					</div>
-					<div class="text">
-						<h3>Chef Clarissa</h3>
-					</div>
-				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/chef4.jpg" alt="chef" />
-					</div>
-					<div class="text">
-						<h3>Chef Paul</h3>
-					</div>
-				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/chef5.jpg" alt="chef" />
-					</div>
-					<div class="text">
-						<h3>Chef Johnny</h3>
+					<div class="thank-you-text">
+						We here at Italianopari welcome you to our community. Check your email for more information!
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="testimonials" id="testimonials">
-			<div class="title-heading white">
-				<h2 class="titleText">What they are saying</h2>
-				<p>See who creates our tasty meals</p>
-			</div>
-			<div class="content">
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/headshot1.jpg" alt="testimonials" />
-					</div>
-					<div class="text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Veritatis illum nisi incidunt ipsa doloribus!
-							Aliquid repudiandae assumenda voluptate eligendi.
-							Veniam sed necessitatibus corrupti! Amet accusamus
-							excepturi voluptatem nostrum, provident assumenda.
-						<h3>Chef Roberto</h3>
+		<section class="hero">
+			<img src="/images/italiano.jpg" alt="hero image" class="hero__bg">
+				<div class="hero__content-container">
+					<div class="hero__info">
+						<h1 class="hero__title">Good Food Lies Ahead</h1>
+						<p class="hero__paragraph">
+							Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit.
+							Culpa officia ea itaque sunt laudantium quidem sapiente
+							quod, iusto incidunt a dolor sint deserunt magni minima
+							dolorem, ipsam harum et quam!
+							what!!
 						</p>
+						<a class="button button--hero" href="#">View Menu</a>
 					</div>
 				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/headshot2.jpg" alt="testimonials" />
-					</div>
-					<div class="text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Veritatis illum nisi incidunt ipsa doloribus!
-							Aliquid repudiandae assumenda voluptate eligendi.
-							Veniam sed necessitatibus corrupti! Amet accusamus
-							excepturi voluptatem nostrum, provident assumenda.
-						<h3>Chef Roberto</h3>
+		</section>
+		<section class="about section-gap">
+			<div class="container">
+				<div class="about__content">
+					<div class="about__column-left">
+						<h2 class="about__title">About Us</h2>
+						<p class="about__paragraph">
+							Lorem ipsum, dolor sit amet consectetur adipisicing
+							elit. Blanditiis, magni incidunt quo architecto, quis
+							officia quod tenetur rerum, atque nisi vitae iure
+							laboriosam. Non nostrum tenetur sint cupiditate quam!
+							Culpa nostrum et dolorem ex ipsa, labore reprehenderit?
+							Quaerat ab architecto tempora, repellat perferendis
+							ratione labore sapiente rem sunt fugiat, saepe beatae
+							minima voluptate, consequatur veniam dolorum porro
+							excepturi itaque mollitia ducimus molestiae. Tempore eos
+							perspiciatis natus eum nihil libero accusamus magnam
+							aliquid, iusto quas inventore cumque quisquam itaque
+							possimus impedit sit, sed ex maiores harum placeat
+							molestias exercitationem eligendi quidem! A perspiciatis
+							unde illum non alias deleniti quod enim nobis.
 						</p>
+						<div class="social-links">
+							<h5 class="text">Follow Us:</h5>
+							<a href="#" class="link">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="#" class="link">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+							<a href="#" class="link">
+								<i class="fab fa-twitter-square"></i>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/headshot3.jpg" alt="testimonials" />
-					</div>
-					<div class="text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Veritatis illum nisi incidunt ipsa doloribus!
-							Aliquid repudiandae assumenda voluptate eligendi.
-							Veniam sed necessitatibus corrupti! Amet accusamus
-							excepturi voluptatem nostrum, provident assumenda.
-						<h3>Chef Roberto</h3>
-						</p>
-					</div>
-				</div>
-				<div class="box">
-					<div class="image-box">
-						<img src="/images/headshot4.jpg" alt="testimonials" />
-					</div>
-					<div class="text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Veritatis illum nisi incidunt ipsa doloribus!
-							Aliquid repudiandae assumenda voluptate eligendi.
-							Veniam sed necessitatibus corrupti! Amet accusamus
-							excepturi voluptatem nostrum, provident assumenda.
-						<h3>Chef Roberto</h3>
-						</p>
+					<div class="about__column-right">
+						<div class="about__column-right-image">
+							<img src="/images/entree-3.jpg"
+									 alt="food photo">
+						</div>
 					</div>
 				</div>
 			</div>
-    </section>
-    <section class="contact" id="contact">
-			<div class="title-heading">
-				<h2 class="titleText">Contact Us</h2>
-				<p>Please get in touch with us!</p>
-      </div>
-      <div class="contactForm">
-        <h3>Send Message</h3>
-        <div class="inputBox">
-          <input type="text" placeholder="Name">
-        </div>
-        <div class="inputBox">
-          <input type="email" placeholder="Email">
-        </div>
-        <div class="inputBox">
-          <textarea cols="30" rows="10"></textarea>
-        </div>
-        <div class="inputBox">
-          <input type="submit" value="Send">
-        </div>
-      </div>
+		</section>
+		<section class="menu section-gap">
+			<div class="container">
+				<div class="title-heading">
+					<h1 class="title">Menu</h1>
+					<p>There's always something special featured!</p>
+				</div>
+				<div class="menu__grid-container">
+					<a href="#" class="box">
+						<div class="box__image">
+							<img src="/images/chixparm.jpg" alt="chix parm" />
+						</div>
+						<div class="text">
+							<h3>Featured Appetizer</h3>
+						</div>
+					</a>
+					<a href="#" class="box">
+						<div class="box__image">
+							<img src="/images/entree-2.jpg" alt="chix parm" />
+						</div>
+						<div class="text">
+							<h3>Featured Entree</h3>
+						</div>
+					</a>
+					<a href="#" class="box">
+						<div class="box__image">
+							<img src="/images/wine-2.jpg" alt="chix parm" />
+						</div>
+						<div class="text">
+							<h3>Special Beverage</h3>
+						</div>
+					</a>
+					<a href="#" class="box">
+						<div class="box__image">
+							<img src="/images/entree-3.jpg" alt="chix parm" />
+						</div>
+						<div class="text">
+							<h3>Featured Entree</h3>
+						</div>
+					</a>
+					<a href="#" class="box">
+						<div class="box__image">
+							<img src="/images/cheesecake.jpg" alt="chix parm" />
+						</div>
+						<div class="text">
+							<h3>Featured Desert</h3>
+						</div>
+					</a>
+					<a href="#" class="box">
+						<div class="box__image">
+							<img src="/images/wine-1.jpg" alt="chix parm" />
+						</div>
+						<div class="text">
+							<h3>Featured Desert</h3>
+						</div>
+					</a>
+				</div>
+				<a href="#" class="button button--menu">View All</a>
+			</div>
+		</section>
+		<section class="chefs section-gap">
+			<div class="container">
+				<div class="title-heading">
+					<h2 class="title">Meet The Team</h2>
+				</div>
+				<div class="chefs__content">
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/chef1.jpg" alt="chef" />
+						</div>
+						<div class="box__text">
+							<h3>Chef Roberto</h3>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/chef2.jpg" alt="chef" />
+						</div>
+						<div class="box__text">
+							<h3>Chef Danny</h3>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/chef3.jpg" alt="chef" />
+						</div>
+						<div class="box__text">
+							<h3>Chef Clarissa</h3>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/chef4.jpg" alt="chef" />
+						</div>
+						<div class="box__text">
+							<h3>Chef Paul</h3>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/chef5.jpg" alt="chef" />
+						</div>
+						<div class="box__text">
+							<h3>Chef Johnny</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials section-gap">
+			<div class="container">
+				<div class="title-heading">
+					<h2 class="title">Testimonials</h2>
+					<p>What they are saying!</p>
+				</div>
+				<div class="testimonials__content">
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/headshot1.jpg"
+									 alt="testimonials" />
+						</div>
+						<div class="box__text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Veritatis illum nisi incidunt ipsa
+								doloribus!
+								Aliquid repudiandae assumenda voluptate eligendi.
+								Veniam sed necessitatibus corrupti! Amet accusamus
+								excepturi voluptatem nostrum, provident assumenda.
+							<h3>Chef Roberto</h3>
+							</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/headshot2.jpg"
+									 alt="testimonials" />
+						</div>
+						<div class="box__text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Veritatis illum nisi incidunt ipsa
+								doloribus!
+								Aliquid repudiandae assumenda voluptate eligendi.
+								Veniam sed necessitatibus corrupti! Amet accusamus
+								excepturi voluptatem nostrum, provident assumenda.
+							<h3>Chef Roberto</h3>
+							</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/headshot3.jpg"
+									 alt="testimonials" />
+						</div>
+						<div class="box__text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Veritatis illum nisi incidunt ipsa
+								doloribus!
+								Aliquid repudiandae assumenda voluptate eligendi.
+								Veniam sed necessitatibus corrupti! Amet accusamus
+								excepturi voluptatem nostrum, provident assumenda.
+							<h3>Chef Roberto</h3>
+							</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box__image">
+							<img src="/images/headshot4.jpg"
+									 alt="testimonials" />
+						</div>
+						<div class="box__text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Veritatis illum nisi incidunt ipsa
+								doloribus!
+								Aliquid repudiandae assumenda voluptate eligendi.
+								Veniam sed necessitatibus corrupti! Amet accusamus
+								excepturi voluptatem nostrum, provident assumenda.
+							<h3>Chef Roberto</h3>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
     </section>
     <footer class="footer">
-      <p>Copyright 2022 Italianopari Restaurant</p>
-      <div class="social-links">
-        <div class="text">
-          <h4>Follow Us:</h4>
-        </div>
-        <a href="#" class="link">
+			<div class="container">
+				<div class="footer__top-menu">
+					<div class="footer__menu-section">
+						<h4 class="footer__menu-title">
+							About Us
+						</h4>
+						<ul class="footer__menu-list">
+							<li>
+								<a href="#">Our Story</a>
+							</li>
+							<li>
+								<a href="#">Newsletter</a>
+							</li>
+							<li>
+								<a href="#">Careers</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__menu-section">
+						<h4 class="footer__menu-title">
+							Find
+						</h4>
+						<ul class="footer__menu-list">
+							<li>
+								<a href="#">Menu</a>
+							</li>
+							<li>
+								<a href="#">Locations</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__menu-section">
+						<h4 class="footer__menu-title">
+							Order & Reserve
+						</h4>
+						<ul class="footer__menu-list">
+							<li>
+								<a href="#">Dine-In Reservations</a>
+							</li>
+							<li>
+								<a href="#">Gift Cards</a>
+							</li>
+							<li>
+								<a href="#">Group & Private Dining</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__menu-section">
+						<h4 class="footer__menu-title">
+							About Us
+						</h4>
+						<ul class="footer__menu-list">
+							<li>
+								<a href="#">Our Story</a>
+							</li>
+							<li>
+								<a href="#">Newsletter</a>
+							</li>
+							<li>
+								<a href="#">Careers</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p>&copy; 2022 Italianopari Restaurant</p>
+				<div class="footer__social-links">
+					<div class="text">
+						<h5>Follow Us:</h5>
+					</div>
+					<a href="#" class="link">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" class="link">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="#" class="link">
+						<i class="fab fa-twitter-square"></i>
+					</a>
+				</div>
+			</div>
+    </footer>
+		<!-- Footer Mobile Start -->
+		<div class="footer--mobile">
+			<div class="footer-mobile__accordian">
+				<div class="footer-mobile__menu">
+					<button class="footer-mobile__toggle">
+						<h4 class="footer-mobile__title">
+							About Us
+						</h4>
+						<i class="fas fa-plus footer-mobile__icon"></i>
+					</button>
+					<ul class="footer-mobile__content">
+						<li>
+							<a href="#">Our Story</a>
+						</li>
+						<li>
+							<a href="#">Newsletter</a>
+						</li>
+						<li>
+							<a href="#">Careers</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-mobile__menu">
+					<button class="footer-mobile__toggle">
+						<h4 class="footer-mobile__title">
+							About Us
+						</h4>
+						<i class="fas fa-plus footer-mobile__icon"></i>
+					</button>
+					<ul class="footer-mobile__content">
+						<li>
+							<a href="#">Our Story</a>
+						</li>
+						<li>
+							<a href="#">Newsletter</a>
+						</li>
+						<li>
+							<a href="#">Careers</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-mobile__menu">
+					<button class="footer-mobile__toggle">
+						<h4 class="footer-mobile__title">
+							About Us
+						</h4>
+						<i class="fas fa-plus footer-mobile__icon"></i>
+					</button>
+					<ul class="footer-mobile__content">
+						<li>
+							<a href="#">Our Story</a>
+						</li>
+						<li>
+							<a href="#">Newsletter</a>
+						</li>
+						<li>
+							<a href="#">Careers</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p>
+				&copy; 2022 Italianopari Restaurant
+			</p>
+			<div class="footer__social-links">
+				<div class="text">
+					<h5>Follow Us:</h5>
+				</div>
+				<a href="#" class="link">
 					<i class="fab fa-instagram"></i>
 				</a>
 				<a href="#" class="link">
@@ -288,8 +498,9 @@
 				<a href="#" class="link">
 					<i class="fab fa-twitter-square"></i>
 				</a>
-      </div>
-    </footer>
+			</div>
+		</div>
+		<!-- Footer Mobile End -->
 	</body>
 	<script src="/main.js"></script>
 </html>
