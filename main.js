@@ -1,38 +1,14 @@
+const header = document.querySelector('.header');
 let toggles = document.getElementsByClassName('footer-mobile__toggle');
 let mobileContent = document.getElementsByClassName('footer-mobile__content');
 let icons = document.getElementsByClassName('footer-mobile__icon');
 
-
-
-
-for(let i = 0; i < toggles.length; i++) {
-  toggles[i].addEventListener('click', () => {
-    if(parseInt(mobileContent[i].style.height) != mobileContent[i].scrollHeight) {
-      mobileContent[i].style.height = mobileContent[i].scrollHeight + "px";
-      icons[i].classList.remove('fa-plus');
-      icons[i].classList.add('fa-minus');
-    } else {
-      mobileContent[i].style.height = "0px";
-      icons[i].classList.remove('fa-minus');
-      icons[i].classList.add('fa-plus');
-    }
-    for(let j = 0; j < mobileContent.length; j++) {
-      if(j !== i) {
-        mobileContent[j].style.height = "0px";
-        icons[j].classList.remove('fa-minus');
-        icons[j].classList.add('fa-plus');
-      }
-    }
-  });
-}
-
-
-
+// Sticky Header
+window.addEventListener('scroll', function () {
+  header.classList.toggle("header--sticky", window.scrollY > 60);
+});
 
 // Email Modal 
-
-
-
 window.onload = () => {
   let emailState = false;
   let emailModal = document.getElementsByClassName('email-modal')[0];
@@ -92,21 +68,31 @@ window.onload = () => {
   });
 }
 
-window.addEventListener('scroll', function () {
-  const header = document.querySelector('.header');
-  header.classList.toggle("header--sticky", window.scrollY > 60);
-});
-function toggleMenu() {
-  const menuToggle = document.querySelector('.menuToggle');
-  const nav = document.querySelector('.header__nav');
-  menuToggle.classList.toggle('active');
-  nav.classList.toggle('active');
+
+
+
+
+// Footer Mobile Menu
+for (let i = 0; i < toggles.length; i++) {
+  toggles[i].addEventListener('click', () => {
+    if (parseInt(mobileContent[i].style.height) != mobileContent[i].scrollHeight) {
+      mobileContent[i].style.height = mobileContent[i].scrollHeight + "px";
+      icons[i].classList.remove('fa-plus');
+      icons[i].classList.add('fa-minus');
+    } else {
+      mobileContent[i].style.height = "0px";
+      icons[i].classList.remove('fa-minus');
+      icons[i].classList.add('fa-plus');
+    }
+    for (let j = 0; j < mobileContent.length; j++) {
+      if (j !== i) {
+        mobileContent[j].style.height = "0px";
+        icons[j].classList.remove('fa-minus');
+        icons[j].classList.add('fa-plus');
+      }
+    }
+  });
 }
-
-
-
-// Mobile Menu
-
 
 
 
