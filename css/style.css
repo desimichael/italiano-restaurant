@@ -811,86 +811,92 @@ img {
 		height: calc(100vh - 200px);
 	}
 
-/* Footer Mobile Start */
-.footer {
-	display: none;
-}
-.footer--mobile {
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.8);
-	padding: 15px 0px;
-	display: block;
-}
-.footer--mobile .footer-mobile__accordian {
-	padding-top: 40px;
-	padding-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-}
-.footer--mobile .footer-mobile__menu {
-	padding: 0px 10px;
-	margin-bottom: 15px;
-}
-.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__toggle {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	cursor: pointer;
-	background-color: #242222;
-	padding: 10px;
-	border: none;
-	outline: none;
-	width: 100%;
-	transition: .3s ease-in-out;
-}
-.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__title {
-	color: #ffffff;
-	font-size: 1.3rem;
-}
-.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__icon {
-	padding: 7px;
-	color: #ffffff;
-}
-.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__content {
-	position: relative;
-	line-height: 25px;
-	height: 0px;
-	overflow: hidden;
-	transition: all .3s;
-}
-.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__content li a {
-	color: #ffffff;
-	display: block;
-	padding: 7px;
-	border-bottom: 1px dashed #747474;
-}
-.footer--mobile p {
-	text-align: center;
-	padding-bottom: 15px;
- }
-.footer--mobile .footer__social-links {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.footer__social-links .text {
-	font-size: .9rem;
-}
-.footer--mobile .footer__social-links .link {
-	height: 25px;
-	width: 25px;
-	background-color: #129637;
-	color: #ffffff;
-	font-weight: 600;
-	border-radius: 2px;
-	display: block;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	transition: .3s;
-}
-/* Footer Mobile End */
+	.menu .title-heading .title,
+	.chefs .title-heading .title,
+	.testimonials .title-heading .title
+	 {
+		font-size: 3.5rem;
+	}
+	/* Footer Mobile Start */
+	.footer {
+		display: none;
+	}
+	.footer--mobile {
+		color: #ffffff;
+		background: rgba(0, 0, 0, 0.8);
+		padding: 15px 0px;
+		display: block;
+	}
+	.footer--mobile .footer-mobile__accordian {
+		padding-top: 40px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer--mobile .footer-mobile__menu {
+		padding: 0px 10px;
+		margin-bottom: 15px;
+	}
+	.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__toggle {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		background-color: #242222;
+		padding: 10px;
+		border: none;
+		outline: none;
+		width: 100%;
+		transition: .3s ease-in-out;
+	}
+	.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__title {
+		color: #ffffff;
+		font-size: 1.3rem;
+	}
+	.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__icon {
+		padding: 7px;
+		color: #ffffff;
+	}
+	.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__content {
+		position: relative;
+		line-height: 25px;
+		height: 0px;
+		overflow: hidden;
+		transition: all .3s;
+	}
+	.footer--mobile .footer-mobile__accordian .footer-mobile__menu .footer-mobile__content li a {
+		color: #ffffff;
+		display: block;
+		padding: 7px;
+		border-bottom: 1px dashed #747474;
+	}
+	.footer--mobile p {
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.footer--mobile .footer__social-links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer__social-links .text {
+		font-size: .9rem;
+	}
+	.footer--mobile .footer__social-links .link {
+		height: 25px;
+		width: 25px;
+		background-color: #129637;
+		color: #ffffff;
+		font-weight: 600;
+		border-radius: 2px;
+		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 5px;
+		transition: .3s;
+	}
+	/* Footer Mobile End */
 }
 /* End Small devices (portrait tablets and large phones, 767px) */
 
@@ -912,9 +918,12 @@ img {
 
 	/* Email Modal */
 	.email-modal {
-		height: calc(100vh - 200px);
+		display: none;
 	}
 
+	.hero .hero__content-container .hero__paragraph {
+		padding: 12px;
+	}
 	/* .header {
 		padding: 10px 15px;
 	}
@@ -927,6 +936,9 @@ img {
 	.banner__content .banner__title {
 		font-size: 2.5rem;
 	} */
+	.about .about__content .about__column-left .about__paragraph {
+		padding-bottom: 2rem;
+	}
 	.menu .title-heading .title,
 	.chefs .title-heading .title,
 	.testimonials .title-heading .title
