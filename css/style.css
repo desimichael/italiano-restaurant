@@ -1,10 +1,6 @@
 @import url(reset.css);
 
-:root {
-	/* Variables */
 
-	/* Spacing */
-}
 
 /* Global Settings Start */
 .container {
@@ -815,7 +811,7 @@ img {
 	.chefs .title-heading .title,
 	.testimonials .title-heading .title
 	 {
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 	/* Footer Mobile Start */
 	.footer {
@@ -924,18 +920,6 @@ img {
 	.hero .hero__content-container .hero__paragraph {
 		padding: 12px;
 	}
-	/* .header {
-		padding: 10px 15px;
-	}
-	.header.sticky {
-		padding: 10px 15px;
-	}
-	.banner {
-		padding: 25px;
-	}
-	.banner__content .banner__title {
-		font-size: 2.5rem;
-	} */
 	.about .about__content .about__column-left .about__paragraph {
 		padding-bottom: 2rem;
 	}
