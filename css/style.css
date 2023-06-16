@@ -267,6 +267,8 @@ img {
 }
 .email-modal__thank-you--success {
 	transform: translate3d(0,0,0);
+	padding: 0 25px;
+	text-align: center;
 }
 .thank-you-title {
 	font-size: 2rem;
@@ -279,6 +281,9 @@ img {
 	font-size: 1rem;
 	font-weight: 300;
 	opacity: 0;
+	padding: 0 25px;
+	text-align: center;
+	line-height: 1.5;
 	transition: opacity .3s ease-in-out .7s;
 }
 .email-modal__thank-you--success .thank-you-title, .email-modal__thank-you--success .thank-you-text {
